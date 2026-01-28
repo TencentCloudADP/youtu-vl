@@ -2,7 +2,7 @@
 
 # <img src="assets/youtu-vl-logo.png" alt="Youtu-VL Logo" height="100px">
 
-[📃 License](LICENSE) • [💻 Code](https://github.com/TencentCloudADP/youtu-vl) • [📊 Benchmarks](#benchmarks) • [🚀 Getting Started](#quickstart) • [🤗 Models](https://huggingface.co/collections/tencent/youtu)
+[📃 License](LICENSE) • [💻 Code](https://github.com/TencentCloudADP/youtu-vl) • [📑 Technical Report](https://arxiv.org/abs/2601.19798) • [📊 Benchmarks](#benchmarks) • [🚀 Getting Started](#quickstart) • [🤗 Models](https://huggingface.co/collections/tencent/youtu)
 </div>
 
 ## 🎯 Introduction
@@ -124,7 +124,7 @@ print(f"Youtu-VL output:\n{generated_text}")
 This guide will help you quickly deploy and invoke the **Youtu-VL-4B-Instruct-GGUF** model. 
 
 ```bash
-llama-server  -hf tencent/Youtu-VL-4B-Instruct-GGUF:Q8_0  \
+llama-server -hf tencent/Youtu-VL-4B-Instruct-GGUF:Q8_0  \
   --port 8080 \
   --image-max-tokens 2048 \
   --temp 0.1 \
@@ -137,7 +137,7 @@ llama-server  -hf tencent/Youtu-VL-4B-Instruct-GGUF:Q8_0  \
 ## TODO List
 
 - [ ] Support vLLM
-- [ ] Release cookbooks for various tasks
+- [ ] Release recipes for various tasks
 - [ ] Release evaluation codes
 
 
@@ -150,10 +150,10 @@ If you find our work useful in your research, please consider citing our paper:
   title={Youtu-VL: Unleashing Visual Potential via Unified Vision-Language Supervision},
   author={Tencent Youtu Lab},
   year={2026},
-  eprint={},
-  archivePrefix={},
-  primaryClass={},
-  url={}, 
+  eprint={2601.19798},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2601.19798}, 
 }
 
 @article{youtu-llm,
