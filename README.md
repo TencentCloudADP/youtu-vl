@@ -118,6 +118,27 @@ generated_text = outputs[0]
 print(f"Youtu-VL output:\n{generated_text}")
 ```
 
+### Demo for VL and CV tasks
+
+A simple demo for quick start, including VL and CV tasks.
+
+```bash
+cd demo
+python demo.py
+```
+
+```bash
+cd demo
+jupyter notebook demo.ipynb
+```
+
+The core part of this demo is three lines below:
+
+```python
+model_path = "tencent/Youtu-VL-4B-Instruct"
+youtu_vl = YoutuVL(model_path)
+response = youtu_vl(prompt, img_path, seg_mode=seg_mode)
+```
 
 ### Using Llama.cpp to Chat
 
@@ -136,8 +157,6 @@ llama-server -hf tencent/Youtu-VL-4B-Instruct-GGUF:Q8_0  \
 
 ## TODO List
 
-- [ ] Support vLLM
-- [ ] Release recipes for various tasks
 - [ ] Release evaluation codes
 
 
