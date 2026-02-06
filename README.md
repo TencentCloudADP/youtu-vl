@@ -139,6 +139,24 @@ model_path = "tencent/Youtu-VL-4B-Instruct"
 youtu_vl = YoutuVL(model_path)
 response = youtu_vl(prompt, img_path, seg_mode=seg_mode)
 ```
+### Qualitative Results
+* **Task: Grounding**
+    > **Prompt:** Please provide the bounding box coordinate of the region this sentence describes: a black and white cat sitting on the edge of the bathtub
+    >
+    > <img src="https://cdn-uploads.huggingface.co/production/uploads/656312995475849b82c38bc4/349v2vYasfz4GtF_T_D09.png" width="300px">
+
+* **Task: Object Detection**
+    > **Prompt:** Detect all objects in the provided image.
+    >
+    > <img src="https://cdn-uploads.huggingface.co/production/uploads/656312995475849b82c38bc4/rUJ6PzIjGJWwK4e9owPlY.png" width="300px">
+
+* **Task: Referring Segmentation**
+    > **Prompt:** Can you segment "hotdog on left" in this image?
+    >
+    > <img src="https://cdn-uploads.huggingface.co/production/uploads/656312995475849b82c38bc4/K-5UG6HSLb28UFGx2pdPX.png" width="300px">
+
+For more examples, please refer to paper and Jupyter notebooks.
+
 
 ### Using Llama.cpp to Chat
 
